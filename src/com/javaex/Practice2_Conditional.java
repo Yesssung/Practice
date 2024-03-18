@@ -88,6 +88,32 @@ public class Practice2_Conditional {
 						scanner.close();
 				
 						}
+						
+			[Ex10.java]
+				두개의 숫자를 입력 받아 큰 수와 작은 수를 분류하여 출력하세요
+				정답: 
+					Scanner scanner = new Scanner(System.in);
+				
+					System.out.println("숫자 2개를 입력해주세요. \n 숫자1: \n 숫자2: ");
+				
+					int a,b; 
+					int max;
+					int min;
+					
+					a = scanner.nextInt();
+					b = scanner.nextInt();
+				
+					if(a > b ) {
+						max = a;
+						min = b;
+						}else  {
+						max = b;
+						min = a;
+						}
+					
+					System.out.print("큰 수: " + max + " 작은 수: " + min  + "입니다.");
+			
+				 
 
 					
 				
@@ -101,21 +127,27 @@ public class Practice2_Conditional {
 				Scanner scanner = new Scanner(System.in);
 				
 				System.out.println("숫자 2개를 입력해주세요. \n 숫자1: \n 숫자2: ");
-				int b= scanner.nextInt();
-				int s= scanner.nextInt();
+			
+				int a,b; 
+				int max;
+				int min;
 				
-				//int result;
-				// result = b < s;
+				a = scanner.nextInt();
+				b = scanner.nextInt();
+			
+				if(a > b ) {
+					max = a;
+					min = b;
+					}else  {
+					max = b;
+					min = a;
+					}
 				
-				if(b < s) {
-					System.out.println("큰 수: " + ( b < s ) + "작은 수: " + ( b < s ) + "입니다.");
-				}
-				
-				
-				scanner.close();
+				System.out.print("큰 수: " + max + " 작은 수: " + min  + "입니다.");
+		
 
 			}
-
+		
 
 	}
 
