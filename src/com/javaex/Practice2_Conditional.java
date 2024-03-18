@@ -1,3 +1,4 @@
+
 package com.javaex;
 
 import java.util.Scanner;
@@ -112,8 +113,125 @@ public class Practice2_Conditional {
 						}
 					
 					System.out.print("큰 수: " + max + " 작은 수: " + min  + "입니다.");
-			
-				 
+					
+			[Ex11.java]
+				두 개의 정수를 입력 받아 큰 수를 작은 수로 나눈 몫과 나머지를 출력하는 프로그램을 작성하세요
+				
+				정답:
+					Scanner scanner = new Scanner(System.in);
+					
+					System.out.print("첫번째 숫자: \n");
+					System.out.print("두번째 숫자:");
+				
+					int a,b; 
+					int max;
+					int min;
+					
+					a = scanner.nextInt();
+					b = scanner.nextInt();
+					
+					if(a > b) {
+						max = a;
+						
+					} else { 
+					}
+					
+					System.out.println("몫: " + a/b + "\n" + "나머지: " + a%b);
+	
+				}
+
+			[Ex12.java]
+				숫자(정수) 3개를 입력받아 가장 작은 수를 출력하세요
+				정답: 		
+					Scanner scanner = new Scanner(System.in);
+					
+					System.out.print("숫자 3개를 입력해 주세요 \n");
+					System.out.print("숫자1: \n숫자2: \n숫자3: ");
+				
+					int a,b,c; 
+					int max;
+					int min;
+					
+					a = scanner.nextInt();
+					b = scanner.nextInt();
+					c = scanner.nextInt();
+					
+					if(a > b ) {
+						max = a;	
+						min = b;
+					} else if (a < b){
+						max = b;
+						min = a;
+					} else if(b > c){
+						max = b;
+						min = c;
+					} else if(b < c){
+						max = c;
+						min = b;
+					} else if(a > c){
+						max = a;
+						min = c;
+					} else {
+						max = c;
+						min = a;
+					}
+					
+					System.out.println("가장 작은 수는" + min + "입니다.");
+	
+				}		
+				
+			[Ex13.java]
+				두 개의 정수를 입력 받은 후에 작은 수가 큰 수의 약수인지 확인하는 프로그램을 작성하세요.
+				(0은 입력하지 않습니다.)
+				정답:
+					Scanner scanner = new Scanner(System.in);
+					
+					System.out.print("첫번째 숫자1: \n두번째 숫자2:");
+				
+					int a,b;
+					
+					a = scanner.nextInt();
+					b = scanner.nextInt();
+					
+					if (a % b == 0) {
+						System.out.println(b + "는(은)" + a + "의 약수입니다.");
+					} else {
+						System.out.println(b + "는(은)" + a + "의 약수가 아닙니다.");
+					}
+					
+			[Ex14.java]
+				사번(양의정수)을 입력하면 팀을 확인할 수 있는 프로그램을 작성하세요.
+				⚫ 팀은 A팀, B팀, C팀 3개의 팀으로 구성합니다.
+				⚫ 사번을 3으로 나누어서 나머지가 0이면 A팀, 1이면 B팀, 2이면 C팀 으로 구분합니다.
+				(사번 0은 고려하지 않습니다.)
+				정답: 
+					Scanner scanner = new Scanner(System.in);
+					
+					System.out.print("사번을 입력해주세요. \n사번:");
+				
+					double a;
+					a = scanner.nextInt();
+					
+					if (a % 3 == 0 ) {
+						System.out.println("A팀 입니다.");
+					} else if(a % 3 == 1){
+						System.out.println("B팀 입니다.");
+					} else if(a % 3 == 2) {
+						System.out.println("C팀 입니다.");
+					} else {
+						System.out.println("잘못 입력하셨습니다.");
+					}
+			[Ex15.java]
+				아래와 같은 계산기 프로그램을 작성하세요.
+				⚫ 기호, 숫자1, 숫자2 순서로 입력 받습니다.
+				⚫ 기호는 ( + - * / ) 4가지 입니다.
+				⚫ 입력된 내용으로 계산하여 결과값을 출력합니다.
+				⚫ 나눗셈의 경우 분모가 0이면 “계산할 수 없습니다” 를 출력합니다.
+				정답:
+					
+
+					
+				
 
 					
 				
@@ -126,29 +244,23 @@ public class Practice2_Conditional {
 				// 
 				Scanner scanner = new Scanner(System.in);
 				
-				System.out.println("숫자 2개를 입력해주세요. \n 숫자1: \n 숫자2: ");
+				System.out.print("사번을 입력해주세요. \n사번:");
 			
-				int a,b; 
-				int max;
-				int min;
-				
+				double a;
 				a = scanner.nextInt();
-				b = scanner.nextInt();
-			
-				if(a > b ) {
-					max = a;
-					min = b;
-					}else  {
-					max = b;
-					min = a;
-					}
 				
-				System.out.print("큰 수: " + max + " 작은 수: " + min  + "입니다.");
-		
+				if (a % 3 == 0 ) {
+					System.out.println("A팀 입니다.");
+				} else if(a % 3 == 1){
+					System.out.println("B팀 입니다.");
+				} else if(a % 3 == 2) {
+					System.out.println("C팀 입니다.");
+				} else {
+					System.out.println("잘못 입력하셨습니다.");
+				}
+				
 
 			}
-		
 
 	}
-
 
