@@ -145,15 +145,14 @@ public class Practice3_Loop {
 				아래와 같이 구구단을 출력하세요
 				
 				정답: 
-				public static void main(String[] args) {
-					for(int dan = 1; dan <10; dan++) {
-					 for(int i = 1; i <10; i++) {
-						System.out.print(dan + "*" + i + "=" + dan*i);
-						System.out.print('\t');
-					}
-					System.out.println();
-					}
-					
+				for(int dan = 1; dan <=9 ; dan++) {
+				for(int i = 2; i <= 9; i++) {
+					System.out.print(i + "*" + dan + "=" + (dan*i) + "\t ");
+				}
+				System.out.println(" ");
+				} 
+			
+			
 					
 			  [Ex09.java]
 				다음과 같이 출력하세요
@@ -297,30 +296,59 @@ public class Practice3_Loop {
 	*/
 	
 	public static void main(String[]args) {
-
-	     Scanner sc = new Scanner(System.in);
-	     
-	    System.out.print("숫자를 입력하세요: ");   
-	    int num = sc.nextInt();
-	    
-	    for(int i=0;i<=num;i++){
-	    	for(int j=0;j<i;j++){
-	    		System.out.print("*");
-	    	}
-	    	System.out.println("");
-	    }
-
-			
-		
-		
-		
-		
-		
-		
+//
+//	    Scanner sc = new Scanner(System.in);
+//	     
+//	    System.out.print("====================\n");
+//	    System.out.print("숫자 맞추기 게임 시작\n");
+//	    System.out.print("====================");
+//	    System.out.print(" \n ");
+//	    
+//	    int a = sc.nextInt();
+//	    int b = sc.nextInt();
+//	    int num = 5;
+//	    
+//	    if (a > num) {
+//	    for(int i = 1; i <= 100; i++ ) {
+//	    	if(a < i) {
+//	    		System.out.println(" 더 높게 ");
+//	    	} break;
+//	    
+//	    } for(int i = 1; i <= 100; i++ ) {
+//	    	if(a > i) {
+//	    		System.out.println(" 더 낮게 ");
+//	    	} else{
+//	    		System.out.println("정답입니다.");
+//	    		
+//	    		a++;
+//	    		break;
+//	    	} 
+//	    }
+//	    	 
+//	    }  
+//	    
+//	    if(num == a || num == b )System.out.println("게임을 종료하시겠습니까? (y/n) >> ");
+//
+//	    
+//	    System.out.print("====================\n");
+//	    System.out.print("숫자 맞추기 게임 종료\n");
+//	    System.out.print("====================");
+//			
+//	    sc.close();
+//
+//			
+//		
+		for(int dan = 1; dan <=9 ; dan++) {
+			 for(int i = 2; i <= 9; i++) {
+				System.out.print(i + "*" + dan + "=" + (dan*i) + "\t ");
 			}
+			System.out.println(" ");
+			} 
+			
+			
+			
 
-
-
+	}
 		
 
 }
