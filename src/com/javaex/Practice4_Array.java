@@ -78,21 +78,22 @@ public class Practice4_Array {
 					
 			[문제] Ex05 5개의 숫자를 키보드로 입력 받아 평균을 구하는 프로그램을 작성하세요.
 				
-				정답: ****************************미완성
+				정답: 
 				Scanner scanner = new Scanner(System.in);
 				
-				int num1 [] = {scanner.nextInt()};
-				int num2 [] = {scanner.nextInt()};
-				int num3 [] = {scanner.nextInt()};
-				int num4 [] = {scanner.nextInt()};
-				int num5 [] = {scanner.nextInt()};
+				int[]arr = new int[5];
+				double sum = 0;
 				
-				for(int i = 1; i < num1[i]+num5[i]; i++) {
-					if(num1[i]+num5[i] / 5 == 0) {
-						System.out.printf("평균은 %.2f 입니다.%n",
-								num1[i]+num5[i]);
-					}
+				
+				for(int i = 0; i < 5; i++) {
+					arr[i] = scanner.nextInt();
+					
+					sum += arr[i];
 				}
+				
+			  	System.out.println();
+			  	System.out.println("평균은 " + sum/5 + "입니다. ");
+			  
 
 			[문제] Ex06 주어진 문자열의 공백을 ‘,’(콤마) 로 변경 후 출력하세요.
 					   char c[] = {'T','h','i','s',' ','i','s',' ','a',' ','p','e','n','c','i','l'};
@@ -198,54 +199,24 @@ public class Practice4_Array {
 	
 	public static void main(String[] args) {
 		
-		char c[] = {'T','h','i','s',' ','i','s',' ','a',' ','p','e','n','c','i','l'};
+		Scanner scanner = new Scanner(System.in);
+		
+		int[]arr = new int[5];
+		double sum = 0;
 		
 		
-		System.out.printf("%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%n", 
-				c[0],
-				c[1],
-				c[2],
-				c[3],
-				c[4],
-				c[5],
-				c[6],
-				c[7],
-				c[8],
-				c[9],
-				c[10],
-				c[11],
-				c[12],
-				c[13],
-				c[14],
-				c[15]
-				);
+		for(int i = 0; i < 5; i++) {
+			arr[i] = scanner.nextInt();
+			
+			sum += arr[i];
+		}
 		
-		char c2[];
-		c2 = c;
-		c2[4] = ',';
-		c2[7] = ',';
-		c2[9] = ',';
-		
-		System.out.printf("%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c", 
-				c[0],
-				c[1],
-				c[2],
-				c[3],
-				c[4],
-				c[5],
-				c[6],
-				c[7],
-				c[8],
-				c[9],
-				c[10],
-				c[11],
-				c[12],
-				c[13],
-				c[14],
-				c[15]
-				);
-		
-		
+	  System.out.println();
+	  System.out.println("평균은 " + sum/5 + "입니다. ");
+	  
+	 
+	 
+
 		
 	}
 
