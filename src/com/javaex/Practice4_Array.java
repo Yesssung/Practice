@@ -199,23 +199,24 @@ public class Practice4_Array {
 	
 	public static void main(String[] args) {
 		
-		Scanner scanner = new Scanner(System.in);
-		
-		int[]arr = new int[5];
-		double sum = 0;
-		
-		
-		for(int i = 0; i < 5; i++) {
-			arr[i] = scanner.nextInt();
-			
-			sum += arr[i];
-		}
-		
-	  System.out.println();
-	  System.out.println("평균은 " + sum/5 + "입니다. ");
-	  
-	 
-	 
+//		[문제] Ex04 다음 주어진 배열 데이터를 이용하여 3의 배수의 개수와 배수의 합을 아래와 같이 출력하는 프로
+//	       그램을 작성하세요.
+//	       int[] data = { 1, 3, 5, 8, 9, 11, 15, 19, 18, 20, 30, 33, 31 };
+//	
+//	정답: ****************************미완성
+//						
+//		int[] data = {1,3,5,8,9,11,15,19,18,20,30,33,31};
+//		int sum = 0;
+//		int count =0;
+//		
+//		for(int i = 0; i < data.length; i++) {
+//			
+//			sum = i + data.length;
+//			count = 
+//			if( data[i] % 3 == 0)
+//				System.out.printf("%d%n", data[i]);
+//			sum+=1;
+//		} System.out.println(count);
 
 		
 	}

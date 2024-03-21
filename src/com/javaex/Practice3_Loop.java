@@ -338,16 +338,29 @@ public class Practice3_Loop {
 //
 //			
 //		
-		for(int dan = 1; dan <=9 ; dan++) {
-			 for(int i = 2; i <= 9; i++) {
-				System.out.print(i + "*" + dan + "=" + (dan*i) + "\t ");
-			}
-			System.out.println(" ");
-			} 
+//		[Ex11.java]
+//				다음과 같은 프로그램을 작성하세요
+//				a. 입력 받은 숫자가 홀수인 경우에는, 입력 값까지 홀수의 합을 출력합니다.
+//				- 예) 입력이 7 이면 16을 출력 ( 1 + 3 + 5 + 7 = 16 )
+//				b. 입력 받은 숫자가 짝수인 경우에는, 입력 값까지 짝수의 합을 출력합니다.
+//				- 예) 입력이 10 이면 30을 출력 ( 2 + 4 + 6 + 8 + 10 = 30 )	
+//				
+//				정답: 
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("숫자를 입력하세요.");
+		int num = sc.nextInt();
+		
+		
+		for(int i = 1; i <= 100; i++) {
+			if(num % 2 == 0) {
+				int result = i + num;
+				System.out.println(result);
+				i += 1;
+			} System.out.println("결과값: " + num);
 			
-			
-			
-
+		}
 	}
 		
 
