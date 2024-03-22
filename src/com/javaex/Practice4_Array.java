@@ -25,6 +25,9 @@ public class Practice4_Array {
 							result = result + intArray[i];
 						}
 					System.out.println(result);
+					
+					
+					
 				
  			
  			[문제] Ex02 double 형 배열 을 작성하고 1.2, 3.3, 6.7 값을 순서대로 입력하고 아래와 같이 출력되도록 for문
@@ -42,6 +45,9 @@ public class Practice4_Array {
 									);
 				
 				}
+				
+				
+				
 						
 			[문제] Ex03 아래코드의 출력 값을 예상하고 코드로 확인해 보세요.
 			
@@ -59,6 +65,9 @@ public class Practice4_Array {
 						System.out.println(intA[i]);
 					}
 					intA의 값이 intB로 대체되면서 0번과 2번의 숫자가 대체되고 intA출력시 바뀐 숫자로 출력된다.
+					
+					
+					
 
 			[문제] Ex04 다음 주어진 배열 데이터를 이용하여 3의 배수의 개수와 배수의 합을 아래와 같이 출력하는 프로
 				       그램을 작성하세요.
