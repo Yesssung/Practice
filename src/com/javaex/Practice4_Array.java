@@ -213,19 +213,21 @@ public class Practice4_Array {
 //	       int[] data = { 1, 3, 5, 8, 9, 11, 15, 19, 18, 20, 30, 33, 31 };
 //	
 //	정답: ****************************미완성
-//						
-//		int[] data = {1,3,5,8,9,11,15,19,18,20,30,33,31};
-//		int sum = 0;
-//		int count =0;
-//		
-//		for(int i = 0; i < data.length; i++) {
-//			
-//			sum = i + data.length;
-//			count = 
-//			if( data[i] % 3 == 0)
-//				System.out.printf("%d%n", data[i]);
-//			sum+=1;
-//		} System.out.println(count);
+						
+		int[] data = {1,3,5,8,9,11,15,19,18,20,30,33,31};
+		int sum = 1;
+		int count =0;
+		
+		for(int i = 0; i < data.length; i++) {
+			if( data[i] % 3 == 0)
+			System.out.println();
+			sum += 1;
+		} for(int a = 1; a < data.length; a++){
+			if(data[a] % 3 ==0) {
+				count = data[a];
+	}
+		
+		}
 
 		
 	}
